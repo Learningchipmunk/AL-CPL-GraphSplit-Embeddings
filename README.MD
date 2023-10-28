@@ -102,7 +102,7 @@ This work would not have been possible without:
 
 ## Citation
 
-Please, do sit our work if this repository was helpful to your research!
+Please, do cite our work if this repository was helpful to your research!
 
 ```latex
 @article{X2023PrereqGCN,
