@@ -80,7 +80,7 @@ We use the following methodology to represent concepts, with the name of the cor
 
 - **OpenAI Embeddings (`Phrase_Embedding_OpenAI`)**: We use [Open AI](https://platform.openai.com/docs/guides/embeddings/what-are-embeddings)'s API to generate concept embeddings using the definitions of concepts (`Query_Phrase`) and their model `text-embedding-ada-002`.
 
-- **Sentence Transformer Embeddings (`Phrase_Embedding_all-*`)**: We use the models of the library [Sentence Transformers](https://www.sbert.net/docs/pretrained_models.html) that are trained in English and the definitions of concepts (`Query_Phrase`) to generate concept embeddings. The model's name used is included in the column's name. I.e. for the embeddings in column `Phrase_Embedding_all-mpnet-base-v2`, the model `all-mpnet-base-v2` was used.
+- **Sentence Transformer Embeddings (`Phrase_Embedding_all-*`)**: We use the English models of the library [Sentence Transformers](https://www.sbert.net/docs/pretrained_models.html) and the definitions of concepts (`Query_Phrase`) to generate concept embeddings. The name of the model we used is included in the column's name. I.e. for the embeddings in column `Phrase_Embedding_all-mpnet-base-v2`, the model `all-mpnet-base-v2` was used.
 
 #### Metrics
 
