@@ -43,7 +43,9 @@ This repository contains the **code** for our `Graph Split` algorithm, the **con
 
 By examining the concept prerequisite graph generated from the AL-CPL dataset, we noticed that some of the prerequisite relations are easier to deduce than others due to the transitive property. Therefore, we devise a novel graph-based stochastic split algorithm that avoids cases where the prerequisite inference in the test set is trivial due to the transitivity property (like in **Subfigure 5.a**). Our *Graph Split* algorithm is in the script `Graph_Split.py`.
 
-![Example of Edges being Deductible by Transitivity](Generated_Images/Split_Examples.png)
+<p align="center">
+  <img src="Generated_Images/Split_Examples.png", style="zoom:125%" />
+</p>
 
 The following section explains how we split our data for our experiments and how we generate our embeddings.
 
