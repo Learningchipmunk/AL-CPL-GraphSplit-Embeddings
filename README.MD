@@ -18,7 +18,16 @@ This repository contains the **code** for our `Graph Split` algorithm, the **con
 
 ## Table of Contents
 
-[TOC]
+- [Contextual Embeddings and Graph Convolutional Networks for Concept Prerequisite Learning](#contextual-embeddings-and-graph-convolutional-networks-for-concept-prerequisite-learning)
+  * [Table of Contents](#table-of-contents)
+  * [Structure of the Repository](#structure-of-the-repository)
+  * [Overview](#overview)
+    + [Split Architecture](#split-architecture)
+    + [Embeddings](#embeddings)
+      - [How our Embeddings Were Generated](#how-our-embeddings-were-generated)
+      - [Metrics](#metrics)
+  * [Acknowledgements](#acknowledgements)
+  * [Citation](#citation)
 
 ## Structure of the Repository
 
