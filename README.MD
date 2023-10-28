@@ -18,7 +18,7 @@ This repository contains the **code** for our `Graph Split` algorithm, the **con
 
 ## Table of Contents
 
-[toc]
+[TOC]
 
 ## Structure of the Repository
 
