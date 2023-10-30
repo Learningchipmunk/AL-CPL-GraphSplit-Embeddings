@@ -60,15 +60,15 @@ The following section explains how we split our data for our experiments and how
 
 ### Split Architecture
 
-For reproducibility purposes, below is a scheme that explains how we generate the appropriate splits to train our models.
+For reproducibility purposes, below is a schema that explains how we generate the appropriate splits to train our models.
 
 ![Schema of the different types of split](Generated_Images/Datasplit_graph_eng.png)
 
-What is called a 'Random Split' is simply the random split of the data you would get after running a function similar to `sklearn.model_selection.train_test_split`, whereas the 'Graph Split' is the random split obtained by our `Graph Split` algorithm (see `Graph_split.py`). The in-domain split, whether from a 'Graph Split' or a 'Random Split', generates 5 different train/val/test splits. The transductive split is the method of splitting the training data recommended by Lescovec for transductive link prediction. His slides are available [here](http://snap.stanford.edu/class/cs224w-2020/slides/08-GNN-application.pdf) (see slide 68.), as well as the [code](https://zqfang.github.io/2021-08-12-graph-linkpredict/) we used to reproduce this split (we used option 2 with 'torch_geometric').
+What is called a 'Random Split' is simply the random split of the data you would get after running a function similar to `sklearn.model_selection.train_test_split`, whereas the 'Graph Split' is the random split obtained by our `Graph Split` algorithm (see `Graph_split.py`). The in-domain split, whether from a 'Graph Split' or a 'Random Split', generates 5 different train/val/test splits for each of the domains. The transductive split is the method of splitting the training data that is recommended by Lescovec for transductive link prediction. His slides are available [here](http://snap.stanford.edu/class/cs224w-2020/slides/08-GNN-application.pdf) (see slide 68.), as well as the [code](https://zqfang.github.io/2021-08-12-graph-linkpredict/) we used to reproduce this split (we used option 2 with 'torch_geometric').
 
 ### Embeddings
 
-We use [FastText](https://fasttext.cc/docs/en/english-vectors.html), Transformers, and [Sentence Transformers](https://www.sbert.net/) to generate concept embeddings to solve Concept Prerequisite Learning on the AL-CPL dataset. Below, you will find the methodology we followed to generate our embeddings and the metrics we used to evaluate them.
+We use [FastText](https://fasttext.cc/docs/en/english-vectors.html), [Transformers](https://huggingface.co/BAAI/bge-large-en-v1.5), and [Sentence Transformers](https://www.sbert.net/) to generate concept embeddings to solve Concept Prerequisite Learning on the AL-CPL dataset. Below, you will find the methodology we followed to generate our embeddings and the metrics we used to evaluate them.
 
 The Notebook `Metrics_for_Emebddings.ipynb` shows how to load the embeddings in `Concepts_with_Description_and_Embeddings.csv`, provides a visualization, and computes the metrics for each embedding method. If needed, `Metrics_for_Emebddings.ipynb` can be opened and executed in [Google Colaboratory](https://colab.google/), you would just need to upload the `Concepts_with_Description_and_Embeddings.csv` file.
 
