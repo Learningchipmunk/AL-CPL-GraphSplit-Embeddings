@@ -87,8 +87,9 @@ We use the following methodology to represent concepts, with the name of the cor
 Additionally, we propose a method to evaluate embeddings for our CPL task, drawing inspiration from recommender systems. Our evaluation process involves the following steps: First, we compute the cosine similarity matrix for all embeddings. Next, we rank the results for each concept. Finally, we compute the evaluation metrics based on the definitions provided below:
 
 <p align="center">
-  <img src="Generated_Images/Metrics_Equation.png", style="zoom:100%" />
+  <img src="Generated_Images/Metrics_Definitions.png", style="zoom:100%" />
 </p>
+
 
 Where for any given concept C, the term "related concepts" refers to either the prerequisites of the given concept C (ancestors) or the concepts for which C is a prerequisite (descendants). The query set, denoted as Q, contains all the related concepts to concept C. 
 

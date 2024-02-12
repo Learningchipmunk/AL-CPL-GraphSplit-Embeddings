@@ -1,2 +1,5 @@
 # Removes the anonymous script
 git-anonymize
+
+# Removes the utilisty script
+NumberofDiamondEdgeCases.py
